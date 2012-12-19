@@ -10,7 +10,7 @@ License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.symfony.com/get/%{pearname}-%{version}.tgz
 # Source0-md5:	01ee375fbc12f6fa5ad33d18e472a70f
-URL:		http://pear.symfony.com/package/Config/
+URL:		http://symfony.com/doc/current/components/config/index.html
 BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
