@@ -1,15 +1,14 @@
-%define		status		stable
 %define		pearname	Config
 %define		php_min_version 5.3.3
 %include	/usr/lib/rpm/macros.php
-Summary:	%{pearname} - Symfony2 Config Component
+Summary:	Symfony2 Config Component
 Name:		php-symfony2-Config
-Version:	2.1.6
+Version:	2.3.4
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.symfony.com/get/%{pearname}-%{version}.tgz
-# Source0-md5:	46f1c95397b0bb192415d301f5107723
+# Source0-md5:	16ab25362eaf47d9dffc9990320b01c2
 URL:		http://symfony.com/doc/current/components/config/index.html
 BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-pear-PEAR
@@ -22,20 +21,19 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Symfony2 Config Component
-
-In PEAR status of this package is: %{status}.
+The Config Component provides several classes to help you find, load,
+combine, autofill and validate configuration values of any kind,
+whatever their source may be (Yaml, XML, INI files, or for instance a
+database).
 
 %prep
 %pear_package_setup
 
 # no packaging of tests
-rm -r .%{php_pear_dir}/Symfony/Component/%{pearname}/Tests
-rm .%{php_pear_dir}/Symfony/Component/%{pearname}/phpunit.xml.dist
+mv .%{php_pear_dir}/Symfony/Component/%{pearname}/Tests .
+mv .%{php_pear_dir}/Symfony/Component/%{pearname}/phpunit.xml.dist .
 
 # fixups
-mv .%{php_pear_dir}/Symfony/Component/%{pearname}/CHANGELOG.md .
-rm .%{php_pear_dir}/Symfony/Component/%{pearname}/.gitattributes
 mv docs/%{pearname}/Symfony/Component/%{pearname}/* .
 
 %install
@@ -56,3 +54,4 @@ rm -rf $RPM_BUILD_ROOT
 %{php_pear_dir}/Symfony/Component/Config/Exception
 %{php_pear_dir}/Symfony/Component/Config/Loader
 %{php_pear_dir}/Symfony/Component/Config/Resource
+%{php_pear_dir}/Symfony/Component/Config/Util
