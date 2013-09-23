@@ -17,6 +17,7 @@ BuildRequires:	rpmbuild(macros) >= 1.610
 Requires:	php(core) >= %{php_min_version}
 Requires:	php-channel(pear.symfony.com)
 Requires:	php-pear >= 4:1.3.10
+Requires:	php-symfony2-Filesystem >= 2.3
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
