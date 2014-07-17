@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 Config Component
 Name:		php-symfony2-Config
-Version:	2.4.3
+Version:	2.4.4
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.symfony.com/get/%{pearname}-%{version}.tgz
-# Source0-md5:	7bb503daab06e47a18969796e1024e3b
+# Source0-md5:	c9c16f5a0d3bf9e01d78b181664d4600
 URL:		http://symfony.com/doc/2.4/components/config/index.html
 BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-pear-PEAR
