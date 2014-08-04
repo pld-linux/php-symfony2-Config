@@ -7,7 +7,7 @@ Version:	2.4.8
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
-Source0:	https://github.com/symfony/Config/archive/v%{version}/%{pearname}-%{version}.tar.gz
+Source0:	https://github.com/symfony/%{pearname}/archive/v%{version}/%{pearname}-%{version}.tar.gz
 # Source0-md5:	f5f9256083fc86629063647eeb25eb96
 URL:		http://symfony.com/doc/2.4/components/config/index.html
 BuildRequires:	phpab
@@ -40,7 +40,7 @@ phpab -n -e '*/Tests/*' -o autoload.php .
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_pear_dir}/Symfony/Component/%{pearname}
 cp -a *.php */ $RPM_BUILD_ROOT%{php_pear_dir}/Symfony/Component/%{pearname}
-rm -rf $RPM_BUILD_ROOT%{php_pear_dir}/Symfony/Component/%{pearname}/Tests
+rm -r $RPM_BUILD_ROOT%{php_pear_dir}/Symfony/Component/%{pearname}/Tests
 
 %clean
 rm -rf $RPM_BUILD_ROOT
