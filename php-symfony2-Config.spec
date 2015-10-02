@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 Config Component
 Name:		php-symfony2-Config
-Version:	2.7.3
+Version:	2.7.5
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
-# Source0-md5:	1ad622cf3b02fa1e74f86611a6e469cd
+# Source0-md5:	87426ca880decf3478ba2ad1e0cbe5ac
 URL:		http://symfony.com/doc/2.7/components/config/index.html
 BuildRequires:	phpab
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -31,7 +31,7 @@ whatever their source may be (Yaml, XML, INI files, or for instance a
 database).
 
 %prep
-%setup -q -n %{package}-%{version}
+%setup -q -n config-%{version}
 
 %build
 phpab -n -e '*/Tests/*' -o autoloader.php .
