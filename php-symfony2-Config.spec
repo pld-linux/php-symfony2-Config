@@ -11,7 +11,6 @@ Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{
 # Source0-md5:	677335f97cc8c03a7d35c1053eadba78
 URL:		http://symfony.com/doc/2.7/components/config/index.html
 BuildRequires:	phpab
-BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.610
 Requires:	php(core) >= %{php_min_version}
 Requires:	php(ctype)
@@ -19,7 +18,6 @@ Requires:	php(json)
 Requires:	php(pcre)
 Requires:	php(spl)
 Requires:	php(xml)
-Requires:	php-pear >= 4:1.3.10
 Requires:	php-symfony2-Filesystem >= 2.3
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
