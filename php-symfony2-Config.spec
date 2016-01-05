@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 Config Component
 Name:		php-symfony2-Config
-Version:	2.7.7
+Version:	2.7.8
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
-# Source0-md5:	677335f97cc8c03a7d35c1053eadba78
+# Source0-md5:	0df6cfd227864356287d0dcaecd0bf61
 URL:		http://symfony.com/doc/2.7/components/config/index.html
 BuildRequires:	phpab
 BuildRequires:	rpmbuild(macros) >= 1.610
