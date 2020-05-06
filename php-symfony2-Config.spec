@@ -2,13 +2,13 @@
 %define		php_min_version 5.3.9
 Summary:	Symfony2 Config Component
 Name:		php-symfony2-Config
-Version:	2.7.8
+Version:	2.8.52
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
-# Source0-md5:	0df6cfd227864356287d0dcaecd0bf61
-URL:		http://symfony.com/doc/2.7/components/config/index.html
+# Source0-md5:	6f04980efce9001acefc53c999729d35
+URL:		https://symfony.com/doc/2.8/components/config.htmlindex.html
 BuildRequires:	phpab
 BuildRequires:	rpmbuild(macros) >= 1.610
 Requires:	php(core) >= %{php_min_version}
